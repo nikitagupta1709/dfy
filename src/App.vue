@@ -1,12 +1,17 @@
 <template>
   <div>
-    <HelloWorld msg="Hey party on!" otherMSg=" Let the party begun!!"/>
+    <HelloWorld />
   </div>
 </template>
 
-<script setup>
-  import HelloWorld from "./components/HelloWorld.vue"
-  console.log("Hello World:", HelloWorld);
+<script>
+  import HelloWorld from "./components/HelloWorld.vue";
+  export default {
+  name: "App",
+  components: {
+    HelloWorld,
+  },
+};
 </script>
 
 <style scoped>
